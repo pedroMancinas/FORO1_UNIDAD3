@@ -70,6 +70,13 @@ uint8_t Gpio_Pin_in_2( uint_fast16_t pin_) //ejercicio 8
     return (0x00);
 }
 
+//Ejercicio 9
+void Gpio_init2021()
+{
+    GPIO_setPinEntradaconPullUp(PUERTO2,BOTON3);                //PIN P2.3 COMO ENTRADA
+    GPIO_setPinSalida(PUERTO2, LEDROJO | LEDVERDE | LEDAZUL);   // CONFIGURA PINES 2.0,2.1,2.2  COMO SALIDA (LEDS RGB)"
+    GPIO_setPinBajo(PUERTO2,   LEDROJO | LEDVERDE |LEDAZUL);    // APAGADOS
+}
 
 
  // <-- E8

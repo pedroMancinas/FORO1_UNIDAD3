@@ -1,5 +1,5 @@
 //Pedro Mancinas Hernandez
-// Ejercicio 8 realizado
+// Ejercicio 9 realizado
 
 /**********************************************************
  * FileName:        main.c
@@ -46,10 +46,7 @@ void main(void)
         CONFIGURACION DE GPIO
     ************************************************/
 
-
-    GPIO_setPinEntradaconPullUp(PUERTO1,BOTON2);                //PIN P1.4 COMO ENTRADA
-    GPIO_setPinSalida(PUERTO2, LEDROJO | LEDVERDE | LEDAZUL);   // CONFIGURA PINES 2.0,2.1,2.2  COMO SALIDA (LEDS RGB)"
-    GPIO_setPinBajo(PUERTO2,   LEDROJO | LEDVERDE |LEDAZUL);    // APAGADOS
+    void Gpio_init2021();
 
     while(1)
     {
